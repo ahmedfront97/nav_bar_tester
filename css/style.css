@@ -1,0 +1,159 @@
+/* <<<<<<< HEAD
+======= */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 3000px;
+    background-image: linear-gradient(to right , #666600 ,  #999966);
+
+}
+.nav-bar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 1s;
+
+    
+    .logo{
+        width: 50px;
+        height: 50px;
+        padding-top: 10px;
+        img{
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    .ul{
+        width: 100%;
+        
+        
+ 
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 10px;
+            list-style: none;
+            li{
+                margin-left: 10px;
+                
+                a{
+                    text-decoration: none;
+                    color: wheat;
+                    text-transform: capitalize;
+                    
+                }
+            }
+        }
+    }
+
+
+
+
+    .icon-bar{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        right: 12px;
+        top: 0;
+        text-align: right;
+        padding-top: 10px;
+        cursor: pointer;
+        color: wheat;
+    }
+}
+
+
+/* 
+.section{
+    width: 100%;
+    height: 100px;
+    background-color: goldenrod;
+} */
+
+
+@media only screen and (min-width : 800px ){
+    .icon-bar{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width : 800px ){
+    .nav-bar{
+        display: block;
+        overflow: hidden;
+        height: 50px;
+        .ul{
+            
+            ul{
+                display: block;
+                padding-top: 10px;
+                padding-left: 0;
+                border: 1px solid wheat;
+                li{
+                    
+                }
+            }
+        }
+    }
+}
+
+
+.search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .search-icon{
+        color: wheat;
+    }
+    .search-input{
+        input{
+            width: 100%;
+            padding: 0 5px;
+            background-color: wheat;
+            border: 1px solid #666600;
+            border-radius: 4px;
+            font-size: 12px;
+            outline: none;
+            color: grey;
+        }
+    }
+
+    .search-input input::placeholder{
+        font-size: 12px;
+    }
+    
+
+    .search-button{
+       button{
+        border: 0;
+        background: none;
+        outline: none;
+        background-color: wheat;
+        padding: 0 2px;
+        border-radius: 2px;
+        color: #666600;
+        font-size: 12px;
+       }
+    }
+
+
+}
+
+
+.show-nav{
+    height: 200px;
+}
+
+/* >>>>>>> 705f495 (first commit) */
