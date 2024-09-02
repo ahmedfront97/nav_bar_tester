@@ -9,8 +9,8 @@
 }
 
 body{
-    height: 3000px;
-    background-color: #090b0e;
+    
+    background-color:white;
 
 }
 
@@ -24,12 +24,15 @@ body{
 
     
     .logo{
-        width: 50px;
+        width: 90px;
         height: 50px;
         padding-top: 10px;
-        img{
-            width: 40px;
-            height: 40px;
+        font-weight: bold;
+        p{
+            color: black;
+            span{
+                color: #00af8c;
+            }
         }
     }
 
@@ -46,10 +49,12 @@ body{
             list-style: none;
             li{
                 margin-left: 10px;
+                font-weight: bold   ;
                 
                 a{
                     text-decoration: none;
-                    color: wheat;
+                    color: #00af8c  ;
+                    
                     text-transform: capitalize;
                     
                 }
@@ -65,26 +70,89 @@ body{
         height: 50px;
         position: absolute;
         right: 12px;
-        top: 0;
+        top: 5px;
         text-align: right;
         padding-top: 10px;
         cursor: pointer;
-        color: gray;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        align-items:self-end;
+     
+        
+
     }
 }
 
 
-/* 
-.section{
-    width: 100%;
-    height: 100px;
-    background-color: goldenrod;
-} */
+
+
+
+/* start intero */
+.intro{
+    h1{
+        text-align: center;
+        margin-top: 30px;
+        color: #00af8c;
+        font-size: 60px;
+        .span1{
+            padding-left: 5px;
+            border-left: 1px solid #00af8c;
+            border-top: 1px solid #00af8c;
+        }
+      
+
+    }
+}
+
+.items{
+    
+    .row{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 0;
+        div{
+            padding: 0;
+            
+        }
+        h3{
+            color: #00af8c;
+            font-size: 22px;
+        }
+        a{
+            text-decoration: none;
+            color: #00af8c;
+            font-weight: 600;
+            padding: 2px 5px 2px 0;
+            border-bottom: 1px solid #00af8c;
+            border-right: 1px solid #00af8c;
+
+        }
+       
+        
+    }
+    .fa-star{
+        color: goldenrod;
+    }
+
+}
+
+  
+
+/*  end intro */
+
+
 
 
 @media only screen and (min-width : 800px ){
     .icon-bar{
         display: none;
+        opacity: 0;
+        cursor: auto;
     }
 
     .search-input{
@@ -93,7 +161,7 @@ body{
             width: 100%;
             padding: 0 5px;
             border: 0;
-            background-color: wheat;
+            background-color: white;
             font-size: 15px;
             outline: none;
             color: grey;
@@ -113,9 +181,8 @@ body{
                 display: block;
                 padding-top: 10px;
                 padding-left: 0;
-                border: 1px solid #7b0fff;
-                box-shadow: 0 4px 8px 0 rgba(123, 15, 255,0.2), 0 6px 20px 0 rgba(123, 15, 255,0.9);
-
+                border: 1px solid #00af8c;
+                box-shadow: 0 4px 8px 0 rgba(26, 188, 156, .1), 0 0px 6px 0 rgba(26, 188, 156, 0.9);
 
                 li{
                     
@@ -131,32 +198,30 @@ body{
     justify-content: center;
 
     .search-icon{
-        color: wheat;
-        background-color: black;
+        color: black;
+        background-color: #00af8c;
         padding-top: 5px;
         border-top-left-radius: 4px;
         border-bottom-left-radius: 4px;
         padding-left: 5px;
-        border: 2px solid #7b0fff;
+        border: 2px solid #00af8c;
         border-right: 0;
-        box-shadow: 0 4px 8px 0 rgba(123, 15, 255,0.2), 0 6px 20px 0 rgba(123, 15, 255,0.9);
-
+        box-shadow: 0 4px 8px 0 rgba(26, 188, 156, .1), 0 0px 6px 0 rgba(26, 188, 156, 0.9);
     }
     .search-input{
-        border: 2px solid #7b0fff;
+        border: 2px solid #00af8c;
         width: 60%;
         border-left: 0;
 
         input{
             width: 100%;
             padding:5px;
-            background-color: black;
+            background-color: white;
             font-size: 15px;
             outline: none;
-            color: grey;
+            color: black;
             border: 0;
-            box-shadow: 0 4px 8px 0 rgba(123, 15, 255,0.2), 0 6px 20px 0 rgba(123, 15, 255,0.9);
-
+            box-shadow: 0 4px 8px 0 rgba(26, 188, 156, .1), 0 0px 6px 0 rgba(26, 188, 156, 0.9);
             
         }
     }
@@ -168,18 +233,18 @@ body{
     
 
     .search-button{
-        border:2px solid #7b0fff;
+        border:2px solid #00af8c;
         border-top-right-radius: 4px;
         border-bottom-right-radius: 4px;
        button{
         border: 0;
         background: none;
         outline: none;
-        background-color: #7b0fff;
+        background-color: #00af8c;
         padding: 5px;
-        color: wheat;
+        color: black;
         font-size: 15px;
-        box-shadow: 0 4px 8px 0 rgba(123, 15, 255,0.2), 0 6px 20px 0 rgba(123, 15, 255,0.9);
+        box-shadow: 0 4px 8px 0 rgba(26, 188, 156, .1), 0 0px 6px 0 rgba(26, 188, 156, 0.9);
 
      
        }
@@ -194,5 +259,78 @@ body{
 .show-nav{
     height: 200px;
 }
+
+
+
+
+
+
+
+
+/* start projects show */
+
+
+    
+
+/* wrap for projects when screen width less than 800px */
+@media only screen and (max-width :600px){
+    .intro{
+        margin-bottom: 40px;
+        h1{
+            text-align: center;
+            margin-top: 30px;
+            color: #00af8c;
+            font-size: 30px;
+            .span1{
+                padding-left: 5px;
+                border-left: 1px solid #00af8c;
+                border-top: 1px solid #00af8c;
+            }
+          
+    
+        }
+    }
+    
+
+
+    .items{
+        
+    
+        .row{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            background-color: white;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            padding: 10px;
+            div{
+                padding: 0;
+                
+            }
+            h3{
+                color: #00af8c;
+                font-size: 20px;
+            }
+            a{
+                text-decoration: none;
+                color: #00af8c;
+                font-weight: 600;
+                padding: 2px 5px 2px 0;
+                border-bottom: 1px solid #00af8c;
+                border-right: 1px solid #00af8c;
+    
+            }
+           
+            
+        }
+    
+    }
+    
+}
+/* end projects show */
+
+
+
 
 /* >>>>>>> 705f495 (first commit) */
