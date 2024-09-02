@@ -220,6 +220,7 @@ body{
 .search{
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 
     .search-icon{
         color: black;
@@ -281,7 +282,7 @@ body{
 
 
 .show-nav{
-    height: 250px;
+    height: 200px;
 }
 
 
